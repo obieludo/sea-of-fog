@@ -56,5 +56,10 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Jumping");
             rb.AddForce(Vector2.up * jumpForce);
         }
+        //airjump
+        if (isOnGround == false && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector2.up * jumpForce);
+        }
     }
 }
