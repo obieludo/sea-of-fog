@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 32016793}
   - component: {fileID: 32016792}
   - component: {fileID: 32016791}
+  - component: {fileID: 32016795}
   m_Layer: 0
   m_Name: LeftUpperArm
   m_TagString: Untagged
@@ -150,13 +151,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32016789}
-  m_LocalRotation: {x: -0, y: -0, z: 0.71235657, w: 0.7018178}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.85, y: -0.76, z: 0}
   m_LocalScale: {x: 0.2858843, y: 0.6047355, z: 1}
   m_Children: []
   m_Father: {fileID: 1446873044}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!233 &32016791
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -171,8 +172,8 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.5}
-  m_ConnectedAnchor: {x: -0.5476657, y: 0.35776407}
+  m_Anchor: {x: 0, y: 0.5}
+  m_ConnectedAnchor: {x: -0.5476322, y: 0.35464567}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -279,6 +280,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &32016795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32016789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c49b1ae449549e449276e43cd9da7cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 32016793}
+  cam: {fileID: 519420031}
+  mousebutton: 323
 --- !u!1 &44280135
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +720,7 @@ GameObject:
   - component: {fileID: 340150332}
   - component: {fileID: 340150331}
   - component: {fileID: 340150330}
+  - component: {fileID: 340150334}
   m_Layer: 0
   m_Name: LeftLowerArm
   m_TagString: Untagged
@@ -718,13 +735,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340150328}
-  m_LocalRotation: {x: -0, y: -0, z: 0.71235657, w: 0.7018178}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -1.4884, y: -0.7653, z: 0}
   m_LocalScale: {x: 0.2858843, y: 0.6047355, z: 1}
   m_Children: []
   m_Father: {fileID: 1446873044}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!233 &340150330
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -739,8 +756,8 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.5}
-  m_ConnectedAnchor: {x: 0.014744111, y: 0.55568105}
+  m_Anchor: {x: 0, y: 0.5}
+  m_ConnectedAnchor: {x: 0.018538967, y: -0.5556679}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -847,6 +864,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &340150334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340150328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c49b1ae449549e449276e43cd9da7cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 340150332}
+  cam: {fileID: 519420031}
+  mousebutton: 323
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,6 +1147,7 @@ GameObject:
   - component: {fileID: 797803186}
   - component: {fileID: 797803188}
   - component: {fileID: 797803187}
+  - component: {fileID: 797803191}
   m_Layer: 0
   m_Name: RightUpperArm
   m_TagString: Untagged
@@ -1258,6 +1291,21 @@ Transform:
   m_Father: {fileID: 1446873044}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.854}
+--- !u!114 &797803191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797803185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c49b1ae449549e449276e43cd9da7cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 797803186}
+  cam: {fileID: 519420031}
+  mousebutton: 324
 --- !u!1 &1044807996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1599,7 @@ GameObject:
   - component: {fileID: 1717148996}
   - component: {fileID: 1717148995}
   - component: {fileID: 1717148994}
+  - component: {fileID: 1717148998}
   m_Layer: 0
   m_Name: RightLowerArm
   m_TagString: Untagged
@@ -1694,6 +1743,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1717148998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717148992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c49b1ae449549e449276e43cd9da7cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1717148996}
+  cam: {fileID: 519420031}
+  mousebutton: 324
 --- !u!1 &2126373458
 GameObject:
   m_ObjectHideFlags: 0
