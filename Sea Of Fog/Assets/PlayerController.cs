@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
         if(isOnGround == true && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Jumping");
-            rb.AddForce(Vector2.up * jumpForce * Time.deltaTime);
+            rb.AddForce(Vector2.up * jumpForce);
         }
     }
 }
