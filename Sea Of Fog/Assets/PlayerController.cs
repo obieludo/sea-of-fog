@@ -38,12 +38,12 @@ public class PlayerController : MonoBehaviour
             if (Input.GetAxisRaw("Horizontal") > 0)
             {
                 anim.Play("Walk");
-                    rb.AddForce(Vector2.right * playerSpeed);
+                    rb.AddForce(Vector2.right * playerSpeed * Time.deltaTime);
             }
             else
             {
                 anim.Play("WalkBack");
-                rb.AddForce(Vector2.left * playerSpeed);
+                rb.AddForce(Vector2.left * playerSpeed * Time.deltaTime);
             }
         }
         else
@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
         if(isOnGround == true && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Jumping");
-            rb.AddForce(Vector2.up * jumpForce);
+            rb.AddForce(Vector2.up * jumpForce * Time.deltaTime);
         }
     }
 }

@@ -1362,8 +1362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1446873045}
   rb: {fileID: 1638745956}
-  jumpForce: 2500
-  playerSpeed: 10
+  jumpForce: 1099999
+  playerSpeed: 2000
   jumpHeight: {x: 0, y: 0}
   isOnGround: 0
   positionRadius: 0.3
@@ -1748,10 +1748,10 @@ HingeJoint2D:
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -10
-    m_UpperAngle: 10
+    m_LowerAngle: -30
+    m_UpperAngle: 30
 --- !u!50 &2126373461
 Rigidbody2D:
   serializedVersion: 4
